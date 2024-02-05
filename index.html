@@ -11,38 +11,61 @@
 <body>
     <fieldset>
         <h1>Step 1:Your details</h1>
-        <label for="name">Name <input type="text" name="name" id="name" size="20"
-                placeholder="First and last name"></label>
+        <div class="box">
+            <label for="name">Name <input type="text" name="name" id="name" size="20"
+                    placeholder="First and last name"></label>
+        </div>
         <br>
-        <label for="email">Email <input type="text" name="email" id="email" size="20"
-                placeholder="example@domain.com"></label>
+        <div class="box">
+            <label for="email">Email <input type="text" name="email" id="email" size="20"
+                    placeholder="example@domain.com"></label>
+        </div>
         <br>
-        <label for="phone">Phone <input type="number" name="phone" id="phone" value="userphone" size="30"
-                placeholder="Eg. +447500000000"></label>
+        <div class="box">
+            <label for="phone">Phone <input type="number" name="phone" id="phone" value="userphone" size="30"
+                    placeholder="Eg. +447500000000"></label>
+        </div>
 
         <h1>Step 2:Delivery address</h1>
-        <label for="address" id="above">Address </label><textarea name="address" id="address" cols="21"
-            rows="10"></textarea>
+        <div class="add-box">
+            <label for="address" id="above">Address </label><textarea name="address" id="address" cols="21"
+                rows="10"></textarea>
+        </div>
         <br>
-        <label for="postcode">Post code <input type="text" name="postcode" size="20"></label>
+        <div class="box">
+            <label for="postcode">Post code <input type="text" name="postcode" size="20"></label>
+        </div>
         <br>
-        <label for="country">Country <input type="text" name="country" size="20"></label>
+        <div class="box">
+            <label for="country">Country <input type="text" name="country" size="20"></label>
+        </div>
 
         <h1>
             Step 3:Card details
         </h1>
-        <label for="card">Card type</label>
+        <div class="box-card">
+            <label for="card">Card type</label>
+            <br>
+            <label for="visa"><input type="radio" id="visa" name="visa"><img
+                    src="image/Screenshot 2024-02-02 122036.png" alt="" width="12px" height="10px">VISA</label>
+            <label for="AmEx"><input type="radio" id="AmEx" name="AmEx"><img src="image/amex.png" alt="" width="12px"
+                    height="10px">AmEx</label>
+            <label for="visa"><input type="radio" id="for" name="visa"><img src="image/mastercard.png" alt=""
+                    width="12px" height="10px">VISA</label>
+        </div>
         <br>
-        
-        <label for="visa"><input type="radio" id="visa" name="visa"><img src="image/Screenshot 2024-02-02 122036.png" alt="" width="12px" height="10px">VISA</label>
-        <label for="AmEx"><input type="radio" id="AmEx" name="AmEx"><img src="image/amex.png" alt="" width="12px" height="10px">AmEx</label>
-        <label for="visa"><input type="radio" id="for" name="visa"><img src="image/mastercard.png" alt="" width="12px" height="10px">VISA</label>
+        <div class="box">
+            <label for="c-no.">Card number <input type="number" size="20" name="c-no." id="c-no."></label>
+        </div>
         <br>
-        <label for="c-no.">Card number <input type="number" size="20" name="c-no." id="c-no."></label>
+        <div class="box">
+            <label for="s-code">Security code <input type="number" name="s-code" size="20" id="s-no."></label>
+        </div>
         <br>
-        <label for="s-code">Security code <input type="number" name="s-code" size="20" id="s-no."></label>
-        <br>
-        <label for="namecard">Name on card <input type="text" size="20" name="namecard" id="namecard" placeholder="Exact name as on the card"></label>
+        <div class="box">
+            <label for="namecard">Name on card <input type="text" size="20" name="namecard" id="namecard"
+                    placeholder="Exact name as on the card"></label>
+        </div>
         <br>
         <button>BUY IT!</button>
     </fieldset>
